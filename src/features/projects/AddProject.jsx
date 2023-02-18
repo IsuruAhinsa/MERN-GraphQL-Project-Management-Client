@@ -40,14 +40,14 @@ const AddProject = () => {
     setStatus("");
     setClientId("");
 
-    navigate('/');
+    navigate("/");
   };
   return (
     <form onSubmit={handleSubmit}>
       <div className="space-y-6">
         <div>
           <h1 className="text-lg leading-6 font-medium text-gray-900">
-            Add Client
+            Add Project
           </h1>
           <p className="mt-1 text-sm text-gray-500">
             Let’s get started by filling in the information below to create your
@@ -139,6 +139,7 @@ const AddProject = () => {
 
         <div className="flex justify-end">
           <button
+            onClick={() => navigate("/")}
             type="button"
             className="bg-white py-2 px-4 border border-gray-300 rounded-md shadow-sm text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-sky-500"
           >
